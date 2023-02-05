@@ -1,0 +1,254 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+}
+
+.container {
+    display: flex;
+}
+
+.container .bg-1 {
+    background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
+    width: 30%;
+    height: 90%;
+    z-index: -1;
+    position: fixed;
+    border-radius: 0 0 500px 0;
+
+}
+
+.container .bg-2 {
+    background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
+    opacity: 0.05;
+    width: 22%;
+    height: 80%;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: fixed;
+    border-radius: 500px 0 0 0;
+    float: right;
+
+}
+
+.chat-app {
+    width: 228px;
+    border: solid #FFF;
+    border-width: 8px;
+    border-radius: 30px;
+    margin: 147px 0 auto 25%;
+    background-color: #F5F3F7;
+    box-shadow: 0px 30px 60px -10px #3e275340;
+}
+
+.description {
+    margin: 308px 20px auto 8%;
+    max-width: 445px;
+    
+}
+
+.description h1 {
+    color: #3E2753;
+    margin: 0 auto 24px auto;
+    font-size: 40px;
+}
+
+.description p {
+    margin: 0 0;
+    color: #A39DA9;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.chat-app .chat-top-bar {
+    background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
+    border-radius: 23px 23px 0 0;
+}
+
+.chat-app .chat-top-bar .notch{
+    width: 228px;
+}
+
+.chat-app .chat-top-bar .notch div{
+    width: 127px;
+    height: 20px;
+    background-color: #FFF;
+    text-align: center;
+    margin: 0 auto 12px auto;
+    border-radius: 0 0 14px 14px;
+}
+
+.chat-app .profile{
+    display: flex;
+    color: #FFF;
+    padding: 0 0 6px 0;
+}
+
+.chat-app .profile .back-btn {
+    margin: 3px 8px auto 16px;
+}
+
+.chat-app .profile img {
+    width: 24px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 8px 0 0;
+    border: solid #FFF;
+    border-width: thin;
+}
+
+.chat-app .profile .name {
+    width: 65%;
+    margin: 3px 0;
+}
+
+.chat-app .profile .name .full-name {
+    font-size: 11px;
+    margin: 0 0 2px 0;
+    font-weight: 400px;
+}
+
+.chat-app .profile .name .status{
+    font-size: 8px;
+    margin: 0 0;
+    color: #D99EFF;
+}
+
+.chat-app .profile .three-dots p{
+    margin: 0 8px 0 0;
+    transform: rotate(90deg);
+    font-size: 22px;
+}
+
+.chat-bubble {
+    font-size: 8px;
+    padding: 6px 8px;
+    line-height: 11px;
+    box-sizing: border-box;
+}
+
+.chat-left {
+    margin: 4px auto 4px 8px;
+    background-color: #EEE5F4;
+    color: #9341C8;
+    width: 128px;
+    border-radius: 10px 10px 10px 4px;
+}
+
+.chat-right {
+    float: right;
+    margin: 4px 8px 4px auto;
+    background-color: #FFFFFF;
+    color: #6E5D7E;
+    max-width: 136px;
+    border-radius: 10px 10px 4px 10px;
+}
+
+.chat-body .bubble-3 {
+    display: flex;
+    background-color: #F5F3F7;
+    padding: 0;
+}
+
+.chat-body .bubble-3 img {
+    width: 40px;
+    margin: 12px 4px 0 4px;
+    border-radius: 10px;
+}
+
+.chat-body .bubble-4 {
+    width: 128px;
+}
+
+.chat-body .bubble-5 {
+    margin: 4px 8px 4px 140px;
+}
+
+.chat-body .bubble-6 {
+    display: block;
+    width: 128px;
+    margin-top: 140px;
+}
+
+.chat-body .bubble-7, .bubble-8 {
+    display: flex;
+    background: linear-gradient(225deg, #E844FF 0%, #8739FF 100%);
+    color: #FFFFFF;
+    width: 160px;
+    padding: 10px 8px;
+}
+
+.chat-body .bubble-7 div {
+    width: 9px;
+    height: auto;
+    border: solid #E472FF;
+    border-radius: 50%;
+    margin: 0 8px 0 0;
+    border-width: thin;
+}
+
+.chat-body .bubble-7 .time {
+    margin: 0 35px 0 0;
+}
+
+.chat-body .bubble-7 .rate {
+    margin: 0 0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.chat-body .bubble-8 div {
+    width: 9px;
+    height: auto;
+    border: solid #E472FF;
+    border-radius: 50%;
+    margin: 0 8px 0 0;
+    border-width: thin;
+}
+
+.chat-body .bubble-8 .time {
+    margin: 0 50px 0 0;
+}
+
+.chat-body .bubble-8 .rate {
+    margin: 0 0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.chat-body .input-field{
+    display: flex;
+}
+
+.chat-body .input-field input{
+    margin: 12px 0 12px 8px;
+    border-radius: 16px 0 0 16px;
+    width: 213px;
+    box-sizing: border-box;
+    border: solid #FFFFFF;
+    border-width: thin;
+    color: #C5C9CC;
+    font-size: 8px;
+    padding: 10px 20px 10px 20px;
+}
+
+.chat-body .input-field .fa-angle-right {
+    color: #FFFFFF;
+    background-color: #3E2753;
+    padding: 5px 8px 5px 8px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.chat-body .input-field button {
+    border-radius: 0 16px 16px 0 ;
+    background-color: #FFFFFF;
+    margin: 12px 8px 12px 0;
+    border: solid #FFFFFF;
+}
