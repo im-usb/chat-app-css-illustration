@@ -44,7 +44,6 @@ body {
     border-radius: 30px;
     margin: 147px 0 auto 25%;
     background-color: #F5F3F7;
-    box-shadow: 0px 30px 60px -10px #3e275340;
 }
 
 .description {
@@ -71,23 +70,26 @@ body {
     border-radius: 23px 23px 0 0;
 }
 
-.chat-app .chat-top-bar .notch{
+.chat-app .notch{
+    position: absolute;
     width: 228px;
+    z-index: 1000;
 }
 
-.chat-app .chat-top-bar .notch div{
+.chat-app .notch div{
     width: 127px;
     height: 20px;
     background-color: #FFF;
     text-align: center;
-    margin: 0 auto 12px auto;
+    margin: -1px auto 13px auto;
     border-radius: 0 0 14px 14px;
 }
 
 .chat-app .profile{
     display: flex;
     color: #FFF;
-    padding: 0 0 6px 0;
+    padding: 32px 0 6px 0;
+    /* margin: -32px 0 0 0; */
 }
 
 .chat-app .profile .back-btn {
